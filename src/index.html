@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="erds" ng-controller="ErdsMainController">
+<html ng-app="erds" ng-controller="ErdsMapController">
 <head>
   <link rel="stylesheet" href="http://ol3js.org/en/master/build/ol.css" type="text/css">
   <title>ERDS v3 test</title>
@@ -11,7 +11,7 @@
     </style>
 </head>
 <body>
-  <div id='map' class="map" erds-map>
+  <div id='map' class="map" erds-map erds-map-map="map">
   </div>
 
   <script src="lib/jquery-2.0.3.js"></script>

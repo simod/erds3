@@ -1,12 +1,13 @@
+'use strict';
 (function(){
     goog.provide('erds');
 
     goog.require('erds_map');
 
-    goog.require('erds_main_controller');
+    goog.require('erds_map_controller');
 
     var module = angular.module('erds', [
         'erds_map',
-        'erds_main_controller'
+        'erds_map_controller'
     ]);
 })();
