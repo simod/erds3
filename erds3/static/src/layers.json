@@ -1,0 +1,109 @@
+[
+  {
+    "id": "ith_silver",
+    "group": "background",
+    "visibility": true,
+    "url": "http://playground.ithacaweb.org/geoserver/gwc/service/wms",
+    "typename": "gmes:erds",
+    "title": "World",
+    "type": "wms"
+  },
+  {
+    "id": "ith_world",
+    "group": "background",
+    "visibility": false,
+    "url": "http://playground.ithacaweb.org/geoserver/gwc/service/wms",
+    "typename": "gmes:terrain",
+    "title": "World Physical",
+    "type": "wms"
+  },
+  {
+    "id": "gphy",
+    "group": "background",
+    "visibility": false,
+    "title": "Google Physical",
+    "type": "google",
+    "typename": "terrain",
+    "url": ""
+  },
+  {
+    "id": "gstr",
+    "group": "background",
+    "visibility": false,
+    "title": "Google Maps",
+    "type": "google",
+    "typename": "street",
+    "url": ""
+  },
+  {
+    "id": "osm",
+    "group": "background",
+    "visibility": false,
+    "title": "OpenStreetMap",
+    "type": "osm",
+    "typename": "",
+    "url": ""
+  },
+  {
+    "id": "ith_alerts_h24",
+    "group": "trmm",
+    "visibility": true,
+    "url": "http://erds2.ithacaweb.org/geoserver/gwc/service/wms",
+    "typename": "erds:trmm_alert_geom",
+    "title": "Short term events ( 24 h )",
+    "type": "wms"
+  },
+  {
+    "id": "ith_alerts_h168",
+    "group": "trmm",
+    "visibility": false,
+    "url": "http://erds2.ithacaweb.org/geoserver/gwc/service/wms",
+    "typename": "erds:trmm_alert_geom_h168",
+    "title": "Medium term events ( 7 days )",
+    "type": "wms"
+  },
+  {
+    "id": "ith_forecast_h24",
+    "group": "forecast",
+    "visibility": false,
+    "url": "http://erds2.ithacaweb.org/geoserver/gwc/service/wms",
+    "typename": "erds:forecast_alert_grid_h24",
+    "title": "Short term forecast ( 24 h )",
+    "type": "wms"
+  },{
+    "id": "ith_forecast_h72",
+    "group": "forecast",
+    "visibility": false,
+    "url": "http://erds2.ithacaweb.org/geoserver/gwc/service/wms",
+    "typename": "erds:forecast_alert_grid_h72",
+    "title": "Medium term forecast ( 3 days)",
+    "type": "wms"
+  },
+  {
+    "id": "ith_forecast_h144",
+    "group": "forecast",
+    "visibility": false,
+    "url": "http://erds2.ithacaweb.org/geoserver/gwc/service/wms",
+    "typename": "erds:forecast_alert_grid_h144",
+    "title": "Medium term forecast ( 6 days )",
+    "type": "wms"
+  },
+  {
+    "id": "last_cumulated_24h_forecast",
+    "group": "cumulated",
+    "visibility": false,
+    "url": "http://erds2.ithacaweb.org/geoserver/gwc/service/wms",
+    "typename": "erds:last_cumulated_24h_forecast",
+    "title": "Forecast ( 24 h )",
+    "type": "wms"
+  },
+  {
+    "id": "last_cumulated_24h_trmm",
+    "group": "cumulated",
+    "visibility": false,
+    "url": "http://erds2.ithacaweb.org/geoserver/gwc/service/wms",
+    "typename": "erds:last_cumulated_24h_trmm",
+    "title": "Trmm ( 24 h )",
+    "type": "wms"
+  }
+]

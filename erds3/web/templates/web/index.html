@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html ng-app="erds" ng-controller="ErdsMapController">
+<head>
+  <link rel="stylesheet" href="http://ol3js.org/en/master/build/ol.css" type="text/css">
+  <title>ERDS v3 test</title>
+  <style>
+      .map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+  <div id='map' class="map" erds-map erds-map-map="map">
+  </div>
+
+  <script src="{% static "src/lib/jquery-2.0.3.js" %}"></script>
+  <script src="{% static "src/lib/angular-1.2.1.js" %}"></script>
+  <script src="{% static "src/lib/angular-translate-1.1.0.js" %}"></script>
+  <script src="{% static "src/lib/angular-translate-loader-static-files-0.1.5.js" %}"></script>
+  <script src="{% static "src/lib/angular-animate-1.2.1.js" %}"></script>
+  <script src="{% static "src/lib/bootstrap-3.0.0.js" %}"></script>
+  <script src="{% static "src/lib/typeahead-0.9.3.js" %}"></script>
+  <script src="{% static "src/lib/proj4js-compressed.js" %}"></script>
+  <script src="{% static "src/lib/EPSG21781.js" %}"></script>
+  <script src="{% static "src/lib/EPSG2056.js" %}"></script>
+  <script src="{% static "src/lib/fastclick.js" %}"></script>
+
+  <!-- Use Closure to load the application scripts -->
+  <script>
+  window.CLOSURE_NO_DEPS = true;
+  </script>
+
+  <!-- ol-whitespace.js includes Closure's base.js code, so we don't
+       need to load base.js ourselves. We keep Closure's base.js file
+   around in case we need to test with ol.js or ol-simple.js. -->
+  <script src="{% static "src/lib/ol-whitespace.js" %}"></script>
+  <!--<script src="lib/closure/base.js"></script>-->
+  <script src="{% static "src/deps.js" %}"></script>
+  <script>
+    goog.require('erds');
+  </script>
+  <script type="text/javascript">
+    (function(){
+      var module = angular.module('erds');
+      module.constant('erdsSettings',{
+        layers: "{% static "src/layers.json" %}"
+      });
+    })();
+  </script>
+
+</body>
+</html>
