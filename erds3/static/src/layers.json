@@ -70,7 +70,8 @@
     "typename": "erds:forecast_alert_grid_h24",
     "title": "Short term forecast ( 24 h )",
     "type": "wms"
-  },{
+  },
+  {
     "id": "ith_forecast_h72",
     "group": "forecast",
     "visibility": false,

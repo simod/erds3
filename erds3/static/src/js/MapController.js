@@ -30,6 +30,6 @@
   module.controller('ErdsMapController', 
     function($scope, erdsLayers){
       $scope.map = createMap();
-      erdsLayers.getJson();
+      erdsLayers.loadLayers($scope.map);
     });
 })();
