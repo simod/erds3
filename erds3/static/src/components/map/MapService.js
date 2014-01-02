@@ -47,10 +47,10 @@
               params: {
                 LAYERS: data['typename'],
                 FORMAT: 'image/png',
-                visibility: data['visibility'],
                 srs: 'EPSG:900913'
               }
-            })
+            }),
+            visible: data['visibility']
           });
         };
       };

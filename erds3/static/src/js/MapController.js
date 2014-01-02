@@ -14,8 +14,8 @@
     var map = new ol.Map({
       view: new ol.View2D({
         projection: projection,
-        center:  ol.proj.transform([45, 17], 'EPSG:4326', 'EPSG:3857'),
-        zoom: 6
+        center: ol.proj.transform([45, 17], 'EPSG:4326', 'EPSG:3857'),
+        zoom: 4
       }),
       layers: [
         new ol.layer.Tile({
